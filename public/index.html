@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>AI Video Clipper</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="card">
+<h1>AI Video Clipper</h1>
+
+<input type="file" id="video">
+<input type="text" id="youtube" placeholder="YouTube Link">
+
+<input type="number" id="start" placeholder="Start (detik)">
+<input type="number" id="end" placeholder="End (detik)">
+
+<select id="format">
+<option value="16:9">16:9</option>
+<option value="9:16">9:16</option>
+<option value="1:1">1:1</option>
+</select>
+
+<button onclick="process()">Start</button>
+
+<div class="progress"><div id="bar"></div></div>
+
+<video id="preview" controls></video>
+<a id="download" hidden>Download</a>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
